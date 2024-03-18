@@ -1,0 +1,62 @@
+<meta name="color-scheme" content ="dark">
+
+<script>
+
+var username = prompt("What is your name?");
+
+var password = prompt("what is your password");
+
+alert ( "Hello" +     username   +  "!");
+var username = prompt("How old are you?");
+
+// Store the input number as a variable
+var age = 18;
+// Confirm the input to the user using a string and the input variable
+document.write("You are " + age + " years old. ");
+
+// Check the input against a condition
+// If the age is less than 18
+if (age < 18) {
+  // Then tell the user that they are a child
+  document.write("You are still a child.");
+  alert ("Sorry !! you are under aged");
+}
+// Otherwise the person is 18 years old or older
+else (age < 18) 
+{
+  // So tell the user that they are an adult
+  document.write("You are an adult.");
+  alert ("Yes!! Your are able to enter");
+}
+// Ask the user for an input and store the input as a variable
+var number = prompt("What is the magic number?"); 
+// Add a variable to control if the user wins or not
+var winner = false;
+
+// Check if the number is equal to 3
+if (number == 3) {
+  // Confirm for the user that they wrote the correct number
+  document.write("Hello!!  Yes, 3 is the magic number!");
+  // Update the "winner" state to true (this will be checked later!)
+  winner = true;
+}
+
+else if (number > 3){
+  // Give a different output to the user 
+  document.write (" No! that is too Big");
+  alert ("No! that is not a magic number");
+}
+
+else if (number < 3){
+  // Give a different output to the user 
+  document.write (" No! that is too Small");
+  alert ("No! that is not a magic number");
+}
+
+// Check if the user is a winner
+if (winner) {
+  // Give an extra output to the user
+  document.write ("Your all information is true! You are so lucky! You won 5 millon dollers and a Family size Pizza!");
+} 
+
+</script>
